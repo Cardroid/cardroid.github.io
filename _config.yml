@@ -88,9 +88,6 @@ avatar: https://avatars.githubusercontent.com/Cardroid
 # boolean type, the global switch for ToC in posts.
 toc: true
 
-# hits
-hits_url: https://hits.seeyoufarm.com/api/count/incr/badge.svg?count_bg=%2379C83D&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=Hits&edge_flat=true&url=
-
 comments:
   active: # The global switch for posts comments, e.g., 'disqus'.  Keep it empty means disable
   # The active options are as follows:
