@@ -12,9 +12,6 @@ baseurl: ""
 # otherwise, the layout language will use the default value of 'en'.
 lang: ko-KR
 
-# Additional parameters for datetime localization, optional. › https://github.com/iamkun/dayjs/tree/dev/src/locale
-prefer_datetime_locale:
-
 # Change to your timezone › http://www.timezoneconverter.com/cgi-bin/findzone/findzone
 timezone: Asia/Seoul
 
@@ -44,7 +41,7 @@ social:
   email: carbonsindh@gmail.com # change to your email address
   links:
     # The first element serves as the copyright owner's link
-    #- https://twitter.com/username      # change to your twitter homepage
+    # - https://twitter.com/username # change to your twitter homepage
     - https://github.com/cardroid # change to your github homepage
     # Uncomment below to add more social links
     # - https://www.facebook.com/username
@@ -85,7 +82,7 @@ img_cdn:
 # the avatar on sidebar, support local or CORS resources
 avatar: https://avatars.githubusercontent.com/Cardroid
 
-# boolean type, the global switch for ToC in posts.
+# boolean type, the global switch for TOC in posts.
 toc: true
 
 comments:
@@ -106,6 +103,7 @@ comments:
     mapping: # optional, default to 'pathname'
     input_position: # optional, default to 'bottom'
     lang: # optional, default to the value of `site.lang`
+    reactions_enabled: # optional, default to the value of `1`
 
 # Self-hosted static assets, optional › https://github.com/cotes2020/chirpy-static-assets
 assets:
@@ -114,6 +112,9 @@ assets:
     # specify the Jekyll environment, empty means both
     # only works if `assets.self_host.enabled` is 'true'
     env: # [development|production]
+
+pwa:
+  enabled: true # the option for PWA feature
 
 paginate: 10
 
@@ -182,8 +183,9 @@ exclude:
   - "*.gemspec"
   - tools
   - README.md
+  - CHANGELOG.md
   - LICENSE
-  - gulpfile.js
+  - rollup.config.js
   - node_modules
   - package*.json
 
