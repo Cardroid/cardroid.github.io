@@ -1,5 +1,5 @@
 ---
-title: 2023-12-17 cimgui-go에서 HasVtxOffset Flag가 동작하지 않는 문제 수정하기
+title: cimgui-go에서 HasVtxOffset Flag가 동작하지 않는 문제 수정하기
 author: cardroid
 date: 2023-12-17 12:00:00 +0900
 categories: [일기, Fix]
@@ -14,6 +14,8 @@ tags: [golang, imgui, bug]
 
 오디오는 백엔드로 `midiaudio`, GUI는 심플하게 [Imgui](https://github.com/ocornut/imgui)를 사용 중인데, 한 가지 문제가 생겨서 시간을 많이 허비했다...   
 이 과정을 되풀이하지 않기 위해 기록을 남긴다.   
+
+---
 
 ## Imgui 소개
 > Imgui는 다양한 플랫폼과 렌더러를 추상화하여 간단하게 GUI를 구현할 수 있는 크로스 플랫폼 즉시 모드 UI 라이브러리다.   
